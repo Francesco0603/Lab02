@@ -1,7 +1,6 @@
 class Dictionary:
     def __init__(self):
-        pass
-
+        self.dizionario = {}
     def addWord(self):
         pass
 
