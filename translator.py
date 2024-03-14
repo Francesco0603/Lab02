@@ -61,12 +61,14 @@ class Translator:
         self.dizionario[entry[0]] = traduzioniNuove
 
     def handleTranslate(self, query):
+        # traduco parole aliene in italiana/e
         for chiave in self.dizionario:
             if chiave == query:
                 trad = ""
                 for str in self.dizionario[chiave]:
                     trad += str + ", "
                 return trad[:len(trad) - 2]
+            # qui invece controllo se la parola è italiana e la traduco in aliena
             for transl in self.dizionario[chiave]:
                 if transl.strip("\n") == query:
                     return chiave
