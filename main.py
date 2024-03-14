@@ -23,8 +23,9 @@ while(True):
         paroleInserite = input()
         print(t.handleTranslate(paroleInserite))
     if int(txtIn) == 3:
-        print("Ok, quale parola devo cercare?")
-        pass
+        print("Ok, quale parola devo tradurre?")
+        paroleInserite = input()
+        print(t.handleWildCard(paroleInserite))
     if int(txtIn) == 4:
         print(t)
     if int(txtIn) == 5:
